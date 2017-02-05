@@ -179,31 +179,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FermatsLittleTheorm.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/algorithm/FermatsLittleTheorm.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sort.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/algorithm/Sort.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BinaryTree.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/data/structure/BinaryTree.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1332">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -239,11 +219,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSort.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestSort.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/com/garypaduana/groovytools/algorithm/TestSort.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="558">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Files.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/system/Files.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1116">
+              <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+              <folding>
+                <element signature="e#44#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestFiles.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/garypaduana/groovytools/system/TestFiles.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hash-sample-short" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/test-data/hash-sample-short">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hash-sample" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/test-data/hash-sample">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -598,6 +620,8 @@
         <option value="$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/system/Colorize.groovy" />
         <option value="$PROJECT_DIR$/src/main/test/com/garypaduana/groovytools/system/TestProcess.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/system/Files.groovy" />
+        <option value="$PROJECT_DIR$/src/main/resources/test-data/hash-sample" />
+        <option value="$PROJECT_DIR$/src/main/resources/test-data/hash-sample-short" />
         <option value="$PROJECT_DIR$/src/main/test/com/garypaduana/groovytools/system/TestFiles.groovy" />
       </list>
     </option>
@@ -821,6 +845,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy-tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy-tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -965,59 +1015,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestFiles">
-    <configuration default="false" name="TestFermatsLittleTheorm.test with known composite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.garypaduana.groovytools.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="groovy-tools_main" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.garypaduana.groovytools.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.garypaduana.groovytools.algorithm.TestFermatsLittleTheorm" />
-      <option name="METHOD_NAME" value="test with known composite" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestFermatsLittleTheorm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.garypaduana.groovytools.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="groovy-tools_main" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.garypaduana.groovytools.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.garypaduana.groovytools.algorithm.TestFermatsLittleTheorm" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestFiles.test hash directory">
     <configuration default="false" name="TestProcess.test colored console text" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1084,6 +1082,58 @@
       <option name="MAIN_CLASS_NAME" value="com.garypaduana.groovytools.system.TestFiles" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestFiles.test hash single file" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.garypaduana.groovytools.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="groovy-tools_main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.garypaduana.groovytools.system" />
+      <option name="MAIN_CLASS_NAME" value="com.garypaduana.groovytools.system.TestFiles" />
+      <option name="METHOD_NAME" value="test hash single file" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestFiles.test hash directory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.garypaduana.groovytools.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="groovy-tools_main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.garypaduana.groovytools.system" />
+      <option name="MAIN_CLASS_NAME" value="com.garypaduana.groovytools.system.TestFiles" />
+      <option name="METHOD_NAME" value="test hash directory" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1310,19 +1360,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestFermatsLittleTheorm.test with known composite" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestFermatsLittleTheorm" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestProcess.test colored console text" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestFiles.test large files" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFiles" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestProcess.test colored console text" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestFiles.test large files" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestFiles" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestFiles.test hash single file" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFiles.test hash directory" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestFiles" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFiles.test large files" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestProcess.test colored console text" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestFermatsLittleTheorm" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestFermatsLittleTheorm.test with known composite" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestFiles.test hash directory" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFiles.test hash single file" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestFiles" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestFiles.test large files" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestProcess.test colored console text" />
       </list>
     </recent_temporary>
   </component>
@@ -1346,20 +1396,20 @@
     <history-entry file="TestFiles - 2017.02.05 at 13h 17m 17s.xml">
       <configuration name="TestFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFiles_test_large_files - 2017.02.05 at 13h 09m 29s.xml">
-      <configuration name="TestFiles.test large files" configurationId="JUnit" />
+    <history-entry file="TestFiles_test_hash_directory - 2017.02.05 at 13h 33m 32s.xml">
+      <configuration name="TestFiles.test hash directory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFiles_test_large_files - 2017.02.05 at 13h 10m 07s.xml">
-      <configuration name="TestFiles.test large files" configurationId="JUnit" />
+    <history-entry file="TestFiles_test_hash_single_file - 2017.02.05 at 13h 28m 39s.xml">
+      <configuration name="TestFiles.test hash single file" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFiles_test_large_files - 2017.02.05 at 13h 10m 35s.xml">
-      <configuration name="TestFiles.test large files" configurationId="JUnit" />
+    <history-entry file="TestFiles_test_hash_single_file - 2017.02.05 at 13h 28m 57s.xml">
+      <configuration name="TestFiles.test hash single file" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFiles_test_large_files - 2017.02.05 at 13h 11m 43s.xml">
-      <configuration name="TestFiles.test large files" configurationId="JUnit" />
+    <history-entry file="TestFiles_test_hash_single_file - 2017.02.05 at 13h 29m 11s.xml">
+      <configuration name="TestFiles.test hash single file" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFiles_test_large_files - 2017.02.05 at 13h 12m 03s.xml">
-      <configuration name="TestFiles.test large files" configurationId="JUnit" />
+    <history-entry file="TestFiles_test_hash_single_file - 2017.02.05 at 13h 30m 27s.xml">
+      <configuration name="TestFiles.test hash single file" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestFiles_test_large_files - 2017.02.05 at 13h 14m 58s.xml">
       <configuration name="TestFiles.test large files" configurationId="JUnit" />
@@ -1394,7 +1444,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.50236326" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34678626" sideWeight="0.49763674" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34678626" sideWeight="0.49763674" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1739,24 +1789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/system/Files.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
-          <folding>
-            <element signature="e#44#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/garypaduana/groovytools/system/TestFiles.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/algorithm/FermatsLittleTheorm.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1776,7 +1808,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/data/structure/BinaryTree.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1332">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1827,8 +1859,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/garypaduana/groovytools/algorithm/TestSort.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="558">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/garypaduana/groovytools/system/Files.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test-data/hash-sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test-data/hash-sample-short">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/garypaduana/groovytools/system/TestFiles.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding />
         </state>
       </provider>
