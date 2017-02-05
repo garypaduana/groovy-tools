@@ -1,11 +1,8 @@
 package com.garypaduana.groovytools.email
 
-import java.util.Properties
-
 import javax.activation.DataHandler
 import javax.activation.DataSource
 import javax.activation.FileDataSource
-import javax.mail.Address
 import javax.mail.Message
 import javax.mail.MessagingException
 import javax.mail.Multipart
@@ -17,11 +14,9 @@ import javax.mail.internet.MimeBodyPart
 import javax.mail.internet.MimeMessage
 import javax.mail.internet.MimeMultipart
 
-import java.security.MessageDigest
+class Mailer {
 
-public class Mailer {
-
-    public static void sendEmail(String username, String password, String toAddresses,
+    static void sendEmail(String username, String password, String toAddresses,
             String subject, String text, Collection<File> attachments) throws MessagingException {
 
         Properties props = new Properties()
