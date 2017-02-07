@@ -54,16 +54,6 @@ Import the dependency as a Grape.
         FermatsLittleTheorem.probablyPrime(number)
     })
     
-    println timeIt({
-        for(int i = 2; i <= Math.sqrt(number); i++){
-            if((number % i) == 0){
-                return false
-            }        
-        }
-        return true
-    })
-    
 Produces:
 
     [returnValue:true, duration:0.000181163]
-    [returnValue:true, duration:0.000164525]
