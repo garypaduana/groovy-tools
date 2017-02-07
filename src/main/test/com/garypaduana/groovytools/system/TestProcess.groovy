@@ -16,9 +16,9 @@ class TestProcess extends Specification{
         setup:
             def line = "Hello, in Red!"
         when:
-            def value = "${Colorize.colorize(line, Colorize.red)}"
+            def value = "${Colorize.colorize(line, Colorize.RED)}"
             println value
         then:
-            value.equals("${Colorize.red}$line${Colorize.nc}")
+            value.equals("${Colorize.RED}$line${Colorize.NO_COLOR}")
     }
 }
