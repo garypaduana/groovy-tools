@@ -55,7 +55,7 @@ Import the dependency as a Grape.
     })
     
     println timeIt({
-        for(int i = 2; i < Math.sqrt(number); i++){
+        for(int i = 2; i <= Math.sqrt(number); i++){
             if((number % i) == 0){
                 return false
             }        
