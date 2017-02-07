@@ -1,6 +1,6 @@
 package com.garypaduana.groovytools.algorithm
 
-class FermatsLittleTheorm{
+class FermatsLittleTheorem{
 
     /**
      * Implementation of Fermat's Little Theorm to determine if a
