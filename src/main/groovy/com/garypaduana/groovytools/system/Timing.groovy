@@ -19,7 +19,7 @@ class Timing{
     static def timeIt = { closure ->
         def start = System.nanoTime()
         def result = closure()
-        def duration = (System.nanoTime() - start) / 1e6
+        def duration = (System.nanoTime() - start) / 1e9
         return [returnValue: result, duration: duration]
     }
 }
