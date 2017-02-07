@@ -47,11 +47,9 @@ Import the dependency as a Grape.
     
     import com.garypaduana.groovytools.algorithm.FermatsLittleTheorem
     import static com.garypaduana.groovytools.system.Timing.timeIt
-    
-    def number = 53
-    
+        
     println timeIt({
-        FermatsLittleTheorem.probablyPrime(number)
+        FermatsLittleTheorem.probablyPrime(53)
     })
     
 Produces:
