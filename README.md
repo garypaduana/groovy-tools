@@ -2,7 +2,6 @@
 
 [![](https://jitpack.io/v/garypaduana/groovy-tools.svg)](https://jitpack.io/#garypaduana/groovy-tools)
 
-
 ### gradle
 
 **Step 1**. Add the JitPack repository to your build file
@@ -39,3 +38,32 @@
         <version>-SNAPSHOT</version>
     </dependency>
 
+##Quick Usage
+
+Import the dependency as a Grape.
+
+    @GrabResolver(name='jitpack', root='https://jitpack.io')
+    @Grab(group='com.github.garypaduana', module='groovy-tools', version='develop-SNAPSHOT')
+    
+    import com.garypaduana.groovytools.algorithm.FermatsLittleTheorem
+    import static com.garypaduana.groovytools.system.Timing.timeIt
+    
+    def number = 53
+    
+    println timeIt({
+        FermatsLittleTheorem.probablyPrime(number)
+    })
+    
+    println timeIt({
+        for(int i = 2; i < Math.sqrt(number); i++){
+            if((number % i) == 0){
+                return false
+            }        
+        }
+        return true
+    })
+    
+Produces:
+
+    [returnValue:true, duration:0.000181163]
+    [returnValue:true, duration:0.000164525]
