@@ -1,18 +1,18 @@
 package com.garypaduana.groovytools.system
 
-class Process{
+class Process {
 
     /**
      * Convenience method wrapper for execute(String command, boolean print)
      */
-    static def execute(String command){
+    static def execute(String command) {
         return execute(command, true)
     }
 
     /**
      * Convenience method wrapper for execute(List<String> command, boolean print)
      */
-    static def execute(List<String> command){
+    static def execute(List<String> command) {
         return execute(command, true)
     }
 
@@ -22,7 +22,7 @@ class Process{
      * @param print - should the output be printed to console line by line?
      * @return String - the complete output
      */
-    static def execute(String command, boolean print){
+    static def execute(String command, boolean print) {
         return execute(new ArrayList<String>(Arrays.asList(command.split(" "))), print)
     }
 
@@ -32,12 +32,14 @@ class Process{
      * @param print - should the output be printed to console line by line?
      * @return String - the complete output
      */
-    static def execute(List<String> command, boolean print){
+    static def execute(List<String> command, boolean print) {
         StringBuilder sb = new StringBuilder()
-        println "Executing: ${command.join(' ')}"
+        if (print) {
+            println "Executing: ${command.join(' ')}"
+        }
         def process = new ProcessBuilder(command).redirectErrorStream(true).start()
-        process.inputStream.eachLine{
-            if(print){
+        process.inputStream.eachLine {
+            if (print) {
                 println it
             }
             sb.append(it).append("\n")

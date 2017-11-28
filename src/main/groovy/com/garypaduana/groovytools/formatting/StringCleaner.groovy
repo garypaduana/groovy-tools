@@ -4,8 +4,37 @@ import java.text.DecimalFormat
 
 class StringCleaner {
 
-    static def stripNonHexCharacters(String text){
-        return text.replaceAll("[^0-9ABCDEFabcdef]", '')
+    static def customFormat(String pattern, int value){
+        DecimalFormat decimalFormat = new DecimalFormat(pattern);
+        return decimalFormat.format(value);
+    }
+
+    static def customFormat(String pattern, double value){
+        DecimalFormat decimalFormat = new DecimalFormat(pattern);
+        return decimalFormat.format(value);
+    }
+
+    /**
+     *
+     * @param text
+     * @return
+     */
+    static byte[] decodeMessyHexToByteArray(String text){
+        text = stripNonHexCharacters(text)
+
+        int bitCount = text.length() * 4
+        int byteCount = bitCount % 8 == 0 ? (bitCount / 8) : (bitCount / 8 + 1)
+
+        byte[] bytes = new byte[byteCount]
+
+        int j = 0
+        for(int i = 0; i < text.length(); i += 2){
+            int end = (i + 2) <= text.length() ? (i + 2) : text.length()
+            bytes[j] = 0xFF & Integer.valueOf(text.substring(i, end), 16)
+            j++
+        }
+
+        return bytes
     }
 
     /**
@@ -85,31 +114,7 @@ class StringCleaner {
         return str.substring(start, end)
     }
 
-    static def customFormat(String pattern, int value){
-        DecimalFormat decimalFormat = new DecimalFormat(pattern);
-        return decimalFormat.format(value);
-    }
-
-    static def customFormat(String pattern, double value){
-        DecimalFormat decimalFormat = new DecimalFormat(pattern);
-        return decimalFormat.format(value);
-    }
-
-    static byte[] decodeMessyHexToByteArray(String text){
-        text = stripNonHexCharacters(text)
-
-        int bitCount = text.length() * 4
-        int byteCount = bitCount % 8 == 0 ? (bitCount / 8) : (bitCount / 8 + 1)
-
-        byte[] bytes = new byte[byteCount]
-
-        int j = 0
-        for(int i = 0; i < text.length(); i += 2){
-            int end = (i + 2) <= text.length() ? (i + 2) : text.length()
-            bytes[j] = 0xFF & Integer.valueOf(text.substring(i, end), 16)
-            j++
-        }
-
-        return bytes
+    static def stripNonHexCharacters(String text){
+        return text.replaceAll("[^0-9ABCDEFabcdef]", '')
     }
 }

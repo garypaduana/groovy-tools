@@ -1,7 +1,5 @@
 package com.garypaduana.groovytools.system
 
-import java.awt.image.BufferedImage
-import java.io.File
 import javax.imageio.ImageIO
 import java.security.MessageDigest
 
@@ -19,7 +17,7 @@ class Files{
         }
     }
 
-    static def generateDigest(File file, String digest, int paddedLength){
+    static def generateDigest(File file, String digest, long maxLength, int paddedLength){
         MessageDigest md = MessageDigest.getInstance(digest)
         md.reset()
         def files = []
@@ -47,8 +45,10 @@ class Files{
             f.withInputStream(){is ->
                 byte[] buffer = new byte[8192]
                 int read = 0
-                while((read = is.read(buffer)) > 0){
+                long totalRead = 0
+                while((read = is.read(buffer)) > 0 && totalRead <= maxLength){
                     md.update(buffer, 0, read)
+                    totalRead += read
                 }
             }
         }
