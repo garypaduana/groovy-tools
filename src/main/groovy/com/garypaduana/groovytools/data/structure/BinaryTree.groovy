@@ -1,135 +1,128 @@
 package com.garypaduana.groovytools.data.structure
 
-class BinaryTree{
+class BinaryTree {
 
-    static class Node{
+    static class Node {
         def leftChild
         def rightChild
         def element
         def parent
 
-        Node(def element){
+        Node(def element) {
             this.element = element
         }
 
         @Override
-        public String toString(){
+        public String toString() {
             return element
         }
     }
 
     def root
 
-    def insert(def element){
+    def insert(def element) {
 
-        if(root == null){
+        if (root == null) {
             root = new Node(element)
-        }
-        else{
+        } else {
             def focusNode = root
-            while(true){
-                if(element < focusNode.element){
-                    if(focusNode.leftChild == null){
+            while (true) {
+                if (element < focusNode.element) {
+                    if (focusNode.leftChild == null) {
                         focusNode.leftChild = new Node(element)
                         focusNode.leftChild.parent = focusNode
                         return
-                    }
-                    else{
+                    } else {
                         focusNode = focusNode.leftChild
                     }
-                }
-                else if(element > focusNode.element){
-                    if(focusNode.rightChild == null){
+                } else if (element > focusNode.element) {
+                    if (focusNode.rightChild == null) {
                         focusNode.rightChild = new Node(element)
                         focusNode.rightChild.parent = focusNode
                         return
-                    }
-                    else{
+                    } else {
                         focusNode = focusNode.rightChild
                     }
-                }
-                else{
+                } else {
                     return
                 }
             }
         }
     }
 
-    def contains(def element){
+    def contains(def element) {
         def node = root
-        while(true){
-            if(node == null){
+        while (true) {
+            if (node == null) {
                 return false
             }
-            if(element < node.element){
+            if (element < node.element) {
                 node = node.leftChild
-            }
-            else if(element > node.element){
+            } else if (element > node.element) {
                 node = node.rightChild
-            }
-            else if(element == node.element){
+            } else if (element == node.element) {
                 return true
             }
         }
     }
 
-    def preOrderTraverse(){
+    def preOrderTraverse() {
         return preOrderTraverse(root)
     }
 
-    def preOrderTraverse(def node){
-        if(node == null){
+    def preOrderTraverse(def node) {
+        if (node == null) {
             return []
         }
 
         def elements = []
         elements.add(node.element)
 
-        if(node.leftChild != null){
+        if (node.leftChild != null) {
             elements.addAll(preOrderTraverse(node.leftChild))
         }
-        if(node.rightChild != null){
+        if (node.rightChild != null) {
             elements.addAll(preOrderTraverse(node.rightChild))
         }
 
         return elements
     }
 
-    def inOrderTraverse(){
+    def inOrderTraverse() {
         return inOrderTraverse(root)
     }
 
-    def inOrderTraverse(def node){
-        if(node == null){
+    def inOrderTraverse(def node) {
+        if (node == null) {
             return []
         }
 
         def elements = []
-        if(node.leftChild != null){
+        if (node.leftChild != null) {
             elements.addAll(inOrderTraverse(node.leftChild))
         }
         elements.add(node.element)
-        if(node.rightChild != null){
+        if (node.rightChild != null) {
             elements.addAll(inOrderTraverse(node.rightChild))
         }
 
         return elements
     }
 
-    def postOrderTraverse(){
+    def postOrderTraverse() {
         return postOrderTraverse(root)
     }
 
-    def postOrderTraverse(def node){
-        if(node == null){
+    def postOrderTraverse(def node) {
+        if (node == null) {
             return []
         }
 
         def elements = []
-        if(node.leftChild != null){
+        if (node.leftChild != null) {
             elements.addAll(postOrderTraverse(node.leftChild))
         }
-        if(node.rightChild != null){
+        if (node.rightChild != null) {
             elements.addAll(postOrderTraverse(node.rightChild))
         }
         elements.add(node.element)
@@ -137,23 +130,22 @@ class BinaryTree{
         return elements
     }
 
-    def iterativePreorderTraverse(){
+    def iterativePreorderTraverse() {
         return iterativePreorderTraverse(root)
     }
 
-    def iterativePreorderTraverse(def node){
+    def iterativePreorderTraverse(def node) {
         def elements = []
         def parentStack = new Stack()
 
-        while(parentStack.size() != 0 || node != null){
-            if(node != null){
+        while (parentStack.size() != 0 || node != null) {
+            if (node != null) {
                 elements.add(node.element)
-                if(node.rightChild != null){
+                if (node.rightChild != null) {
                     parentStack.push(node.rightChild)
                 }
                 node = node.leftChild
-            }
-            else{
+            } else {
                 node = parentStack.pop()
             }
         }
@@ -161,20 +153,19 @@ class BinaryTree{
         return elements
     }
 
-    def iterativeInOrderTraverse(){
+    def iterativeInOrderTraverse() {
         return iterativeInOrderTraverse(root)
     }
 
-    def iterativeInOrderTraverse(def node){
+    def iterativeInOrderTraverse(def node) {
         def elements = []
         def parentStack = new Stack()
 
-        while(parentStack.size() != 0 || node != null){
-            if(node != null){
+        while (parentStack.size() != 0 || node != null) {
+            if (node != null) {
                 parentStack.push(node)
                 node = node.leftChild
-            }
-            else{
+            } else {
                 node = parentStack.pop()
                 elements.add(node.element)
                 node = node.rightChild
@@ -183,23 +174,23 @@ class BinaryTree{
         return elements
     }
 
-    def levelOrderTraverse(){
+    def levelOrderTraverse() {
         return levelOrderTraverse(root)
     }
 
-    def levelOrderTraverse(def node){
+    def levelOrderTraverse(def node) {
         def q = new Queue()
         q.enqueue(node)
         def elements = []
 
-        while(q.size() > 0){
+        while (q.size() > 0) {
             node = q.dequeue()
             elements.add(node.element)
 
-            if(node.leftChild != null){
+            if (node.leftChild != null) {
                 q.enqueue(node.leftChild)
             }
-            if(node.rightChild != null){
+            if (node.rightChild != null) {
                 q.enqueue(node.rightChild)
             }
         }
